@@ -640,34 +640,72 @@ function BuyMenu:CreateItems()
         },
 
         [self.types.Weapon] = {
-            { "One-handed", "Two-handed" , "DLC" },
-            ["One-handed"] = {
---                WeaponBuyMenuEntry( Weapon.Handgun, Price, Slot(Left: 0, Right: 1, Primary: 2), "NAME" ),
-                WeaponBuyMenuEntry( Weapon.Handgun, 0, 1, "Pistol", 1 ),
+            { "Right Hand", "Left Hand" , "Primary" },
+            ["Right Hand"] = {
+--                WeaponBuyMenuEntry( Weapon.Handgun, Price, Slot(Left: 0, Right: 1, Primary: 2), "NAME", RequiredRankNumber ),
+				WeaponBuyMenuEntry( Weapon.BubbleGun, 0, 1, "Bubble Gun" ),
+                WeaponBuyMenuEntry( Weapon.Handgun, 0, 1, "Pistol" ),
                 WeaponBuyMenuEntry( Weapon.Revolver, 0, 1, "Revolver" ),
                 WeaponBuyMenuEntry( Weapon.SMG, 0, 1, "SMG" ),
                 WeaponBuyMenuEntry( Weapon.SawnOffShotgun, 0, 1, "Sawn-off Shotgun" ),
 				WeaponBuyMenuEntry( Weapon.GrenadeLauncher, 0, 1, "Grenade Launcher" ),
-				WeaponBuyMenuEntry( Weapon.BubbleGun, 0, 1, "Bubble Gun Slot 1" )
+				WeaponBuyMenuEntry( Weapon.Assault, 0, 1, "Assault Rifle" ),
+				WeaponBuyMenuEntry( Weapon.Shotgun, 0, 1, "Shotgun" ),
+				WeaponBuyMenuEntry( Weapon.MachineGun, 0, 1, "Machine Gun" ),
+				WeaponBuyMenuEntry( Weapon.Sniper, 0, 1, "Sniper Rifle" ),
+				WeaponBuyMenuEntry( Weapon.RocketLauncher, 0, 1, "Rocket Launcher" ),
+				WeaponBuyMenuEntry( Weapon.PanayRocketLauncher, 0, 1, "Panay Rocket Launcher" ),
+				WeaponBuyMenuEntry( Weapon.Minigun, 0, 1, "Minigun" ),
+				WeaponBuyMenuEntry( Weapon.SignatureGun, 0, 1, "Rico's Signature Gun - DLC" ),
+				WeaponBuyMenuEntry( Weapon.Airzooka, 0, 1, "Air Propulsion Gun - DLC" ),
+				WeaponBuyMenuEntry( Weapon.ClusterBombLauncher, 0, 1, "Cluster Bomb Launcher - DLC" ),
+				WeaponBuyMenuEntry( Weapon.MultiTargetRocketLauncher, 0, 1, "Multi-target Rocket Launcher - DLC" ),
+				WeaponBuyMenuEntry( Weapon.QuadRocketLauncher, 0, 1, "Quad Rocket Launcher - DLC" ),
+				WeaponBuyMenuEntry( Weapon.AlphaDLCWeapon, 0, 1, "Bull's Eye Assault Rifle - DLC" ),
             },
 
-            ["Two-handed"] = {
+            ["Left Hand"] = {
+				WeaponBuyMenuEntry( Weapon.BubbleGun, 0, 0, "Bubble Gun" ),
+                WeaponBuyMenuEntry( Weapon.Handgun, 0, 0, "Pistol" ),
+                WeaponBuyMenuEntry( Weapon.Revolver, 0, 0, "Revolver" ),
+                WeaponBuyMenuEntry( Weapon.SMG, 0, 0, "SMG" ),
+                WeaponBuyMenuEntry( Weapon.SawnOffShotgun, 0, 0, "Sawn-off Shotgun" ),
+				WeaponBuyMenuEntry( Weapon.GrenadeLauncher, 0, 0, "Grenade Launcher" ),
+				WeaponBuyMenuEntry( Weapon.Assault, 0, 0, "Assault Rifle" ),
+				WeaponBuyMenuEntry( Weapon.Shotgun, 0, 0, "Shotgun" ),
+				WeaponBuyMenuEntry( Weapon.MachineGun, 0, 0, "Machine Gun" ),
+				WeaponBuyMenuEntry( Weapon.Sniper, 0, 0, "Sniper Rifle" ),
+				WeaponBuyMenuEntry( Weapon.RocketLauncher, 0, 0, "Rocket Launcher" ),
+				WeaponBuyMenuEntry( Weapon.PanayRocketLauncher, 0, 0, "Panay Rocket Launcher" ),
+				WeaponBuyMenuEntry( Weapon.Minigun, 0, 0, "Minigun" ),
+				WeaponBuyMenuEntry( Weapon.SignatureGun, 0, 0, "Rico's Signature Gun - DLC" ),
+				WeaponBuyMenuEntry( Weapon.Airzooka, 0, 0, "Air Propulsion Gun - DLC" ),
+				WeaponBuyMenuEntry( Weapon.ClusterBombLauncher, 0, 0, "Cluster Bomb Launcher - DLC" ),
+				WeaponBuyMenuEntry( Weapon.MultiTargetRocketLauncher, 0, 0, "Multi-target Rocket Launcher - DLC" ),
+				WeaponBuyMenuEntry( Weapon.QuadRocketLauncher, 0, 0, "Quad Rocket Launcher - DLC" ),
+				WeaponBuyMenuEntry( Weapon.AlphaDLCWeapon, 0, 0, "Bull's Eye Assault Rifle - DLC" ),
+            },
+			
+            ["Primary"] = {
+				WeaponBuyMenuEntry( Weapon.BubbleGun, 0, 2, "Bubble Gun" ),
+                WeaponBuyMenuEntry( Weapon.Handgun, 0, 2, "Pistol" ),
+                WeaponBuyMenuEntry( Weapon.Revolver, 0, 2, "Revolver" ),
+                WeaponBuyMenuEntry( Weapon.SMG, 0, 2, "SMG" ),
+                WeaponBuyMenuEntry( Weapon.SawnOffShotgun, 0, 2, "Sawn-off Shotgun" ),
+				WeaponBuyMenuEntry( Weapon.GrenadeLauncher, 0, 2, "Grenade Launcher" ),
 				WeaponBuyMenuEntry( Weapon.Assault, 0, 2, "Assault Rifle" ),
 				WeaponBuyMenuEntry( Weapon.Shotgun, 0, 2, "Shotgun" ),
 				WeaponBuyMenuEntry( Weapon.MachineGun, 0, 2, "Machine Gun" ),
 				WeaponBuyMenuEntry( Weapon.Sniper, 0, 2, "Sniper Rifle" ),
 				WeaponBuyMenuEntry( Weapon.RocketLauncher, 0, 2, "Rocket Launcher" ),
-				WeaponBuyMenuEntry( Weapon.PanayRocketLauncher, 0, 2, "Panay Rocket Launcher" )
-	--			WeaponBuyMenuEntry( Weapon.Minigun, 0, 2, "Minigun" )
-            },
-			
-            ["DLC"] = {
-				WeaponBuyMenuEntry( Weapon.SignatureGun, 0, 1, "Rico's Signature Gun" ),
-				WeaponBuyMenuEntry( Weapon.Airzooka, 0, 2, "Air Propulsion Gun" ),
-				WeaponBuyMenuEntry( Weapon.ClusterBombLauncher, 0, 2, "Cluster Bomb Launcher" ),
-				WeaponBuyMenuEntry( Weapon.MultiTargetRocketLauncher, 0, 2, "Multi-target Rocket Launcher" ),
-				WeaponBuyMenuEntry( Weapon.QuadRocketLauncher, 0, 2, "Quad Rocket Launcher" ),
-				WeaponBuyMenuEntry( Weapon.AlphaDLCWeapon, 0, 2, "Bull's Eye Assault Rifle" )
+				WeaponBuyMenuEntry( Weapon.PanayRocketLauncher, 0, 2, "Panay Rocket Launcher" ),
+				WeaponBuyMenuEntry( Weapon.Minigun, 0, 2, "Minigun" ),
+				WeaponBuyMenuEntry( Weapon.SignatureGun, 0, 2, "Rico's Signature Gun - DLC" ),
+				WeaponBuyMenuEntry( Weapon.Airzooka, 0, 2, "Air Propulsion Gun - DLC" ),
+				WeaponBuyMenuEntry( Weapon.ClusterBombLauncher, 0, 2, "Cluster Bomb Launcher - DLC" ),
+				WeaponBuyMenuEntry( Weapon.MultiTargetRocketLauncher, 0, 2, "Multi-target Rocket Launcher - DLC" ),
+				WeaponBuyMenuEntry( Weapon.QuadRocketLauncher, 0, 2, "Quad Rocket Launcher - DLC" ),
+				WeaponBuyMenuEntry( Weapon.AlphaDLCWeapon, 0, 2, "Bull's Eye Assault Rifle - DLC" ),
             }
         },
 

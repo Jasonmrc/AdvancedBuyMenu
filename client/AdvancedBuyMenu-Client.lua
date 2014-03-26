@@ -108,8 +108,8 @@ function BuyMenu:CreateAppearance(player)
 	local leftfootModel = player:GetValue("AppearanceLeftFoot")
 	if hatModel ~= nil and string.len(hatModel) >= 10 then
 			player_hats[player:GetId()] = ClientStaticObject.Create({
-			position = player:GetBonePosition("ragdoll_Head"), -- Place the hat at the model's head
-			angle = player:GetBoneAngle("ragdoll_Head"), -- Angle the hat at the same angle of the model's head
+			position = player:GetBonePosition("ragdoll_Head"),
+			angle = player:GetBoneAngle("ragdoll_Head"),
 			model = hatModel
 			})
 	else
@@ -122,8 +122,8 @@ function BuyMenu:CreateAppearance(player)
 	end
 	if coveringModel ~= nil and string.len(coveringModel) >= 10 then
 			player_coverings[player:GetId()] = ClientStaticObject.Create({
-			position = player:GetBonePosition("ragdoll_Head"), -- Place the hat at the model's head
-			angle = player:GetBoneAngle("ragdoll_Head"), -- Angle the hat at the same angle of the model's head
+			position = player:GetBonePosition("ragdoll_Head"),
+			angle = player:GetBoneAngle("ragdoll_Head"),
 			model = coveringModel
 			})
 	else
@@ -136,8 +136,8 @@ function BuyMenu:CreateAppearance(player)
 	end
 	if hairModel ~= nil and string.len(hairModel) >= 10 then
 		player_hairs[player:GetId()] = ClientStaticObject.Create({
-		position = player:GetBonePosition("ragdoll_Head"), -- Place the hat at the model's head
-		angle = player:GetBoneAngle("ragdoll_Head"), -- Angle the hat at the same angle of the model's head
+		position = player:GetBonePosition("ragdoll_Head"),
+		angle = player:GetBoneAngle("ragdoll_Head"),
 		model = hairModel
 		})
 	else
@@ -150,8 +150,8 @@ function BuyMenu:CreateAppearance(player)
 	end
 	if faceModel ~= nil and string.len(faceModel) >= 10 then
 			player_faces[player:GetId()] = ClientStaticObject.Create({
-			position = player:GetBonePosition("ragdoll_Head"), -- Place the hat at the model's head
-			angle = player:GetBoneAngle("ragdoll_Head"), -- Angle the hat at the same angle of the model's head
+			position = player:GetBonePosition("ragdoll_Head"),
+			angle = player:GetBoneAngle("ragdoll_Head"),
 			model = faceModel
 			})
 	else
@@ -164,8 +164,8 @@ function BuyMenu:CreateAppearance(player)
 	end
 	if neckModel ~= nil and string.len(neckModel) >= 10 then
 			player_necks[player:GetId()] = ClientStaticObject.Create({
-			position = player:GetBonePosition("ragdoll_Head"), -- Place the hat at the model's head
-			angle = player:GetBoneAngle("ragdoll_Head"), -- Angle the hat at the same angle of the model's head
+			position = player:GetBonePosition("ragdoll_Head"),
+			angle = player:GetBoneAngle("ragdoll_Head"),
 			model = neckModel
 			})
 	else
@@ -178,8 +178,8 @@ function BuyMenu:CreateAppearance(player)
 	end
 	if backModel ~= nil and string.len(backModel) >= 10 then
 			player_backs[player:GetId()] = ClientStaticObject.Create({
-			position = player:GetBonePosition("ragdoll_Spine1"), -- Place the hat at the model's head
-			angle = player:GetBoneAngle("ragdoll_Spine1"), -- Angle the hat at the same angle of the model's head
+			position = player:GetBonePosition("ragdoll_Spine1"),
+			angle = player:GetBoneAngle("ragdoll_Spine1"),
 			model = backModel
 			})
 	else
@@ -192,8 +192,8 @@ function BuyMenu:CreateAppearance(player)
 	end
 	if torsoModel ~= nil and string.len(torsoModel) >= 10 then
 			player_torso[player:GetId()] = ClientStaticObject.Create({
-			position = player:GetBonePosition("ragdoll_Spine1"), -- Place the hat at the model's head
-			angle = player:GetBoneAngle("ragdoll_Spine1"), -- Angle the hat at the same angle of the model's head
+			position = player:GetBonePosition("ragdoll_Spine1"),
+			angle = player:GetBoneAngle("ragdoll_Spine1"),
 			model = torsoModel
 			})
 	else
@@ -206,8 +206,8 @@ function BuyMenu:CreateAppearance(player)
 	end
 	if righthandModel ~= nil and string.len(righthandModel) >= 10 then
 			player_righthand[player:GetId()] = ClientStaticObject.Create({
-			position = player:GetBonePosition("ragdoll_RightForeArm"), -- Place the hat at the model's head
-			angle = player:GetBoneAngle("ragdoll_RightForeArm"), -- Angle the hat at the same angle of the model's head
+			position = player:GetBonePosition("ragdoll_RightForeArm"),
+			angle = player:GetBoneAngle("ragdoll_RightForeArm"),
 			model = righthandModel
 			})
 	else
@@ -220,8 +220,8 @@ function BuyMenu:CreateAppearance(player)
 	end
 	if lefthandModel ~= nil and string.len(lefthandModel) >= 10 then
 		player_lefthand[player:GetId()] = ClientStaticObject.Create({
-		position = player:GetBonePosition("ragdoll_LeftForeArm"), -- Place the hat at the model's head
-		angle = player:GetBoneAngle("ragdoll_LeftForeArm"), -- Angle the hat at the same angle of the model's head
+		position = player:GetBonePosition("ragdoll_LeftForeArm"),
+		angle = player:GetBoneAngle("ragdoll_LeftForeArm"),
 		model = lefthandModel
 		})
 	else
@@ -234,8 +234,8 @@ function BuyMenu:CreateAppearance(player)
 	end
 	if legsModel ~= nil and string.len(legsModel) >= 10 then
 			player_legs[player:GetId()] = ClientStaticObject.Create({
-			position = player:GetBonePosition("ragdoll_Hips"), -- Place the hat at the model's head
-			angle = player:GetBoneAngle("ragdoll_Hips"), -- Angle the hat at the same angle of the model's head
+			position = player:GetBonePosition("ragdoll_Hips"),
+			angle = player:GetBoneAngle("ragdoll_Hips"),
 			model = legsModel
 			})
 	else
@@ -248,8 +248,8 @@ function BuyMenu:CreateAppearance(player)
 	end
 	if rightfootModel ~= nil and string.len(rightfootModel) >= 10 then
 			player_rightfoot[player:GetId()] = ClientStaticObject.Create({
-			position = player:GetBonePosition("ragdoll_RightFoot"), -- Place the hat at the model's head
-			angle = player:GetBoneAngle("ragdoll_RightFoot"), -- Angle the hat at the same angle of the model's head
+			position = player:GetBonePosition("ragdoll_RightFoot"),
+			angle = player:GetBoneAngle("ragdoll_RightFoot"),
 			model = rightfootModel
 			})
 	else
@@ -262,8 +262,8 @@ function BuyMenu:CreateAppearance(player)
 	end
 	if leftfootModel ~= nil and string.len(leftfootModel) >= 10 then
 			player_leftfoot[player:GetId()] = ClientStaticObject.Create({
-			position = player:GetBonePosition("ragdoll_LeftFoot"), -- Place the hat at the model's head
-			angle = player:GetBoneAngle("ragdoll_LeftFoot"), -- Angle the hat at the same angle of the model's head
+			position = player:GetBonePosition("ragdoll_LeftFoot"),
+			angle = player:GetBoneAngle("ragdoll_LeftFoot"),
 			model = leftfootModel
 			})
 	else
@@ -666,8 +666,8 @@ function BuyMenu:LoadCategories()
             self.tone2Picker:SetColor( Color( 255, 255, 255 ) )
             self.tone2 = self.tone2Picker:GetColor()
 			--	Sets the default color to the Player's color	--
---			tone1:SetColor(LocalPlayer:GetColor())
---			tone2:SetColor(LocalPlayer:GetColor())
+			self.tone1Picker:SetColor(LocalPlayer:GetColor())
+			self.tone2Picker:SetColor(LocalPlayer:GetColor())
             
             local setColorBtn = Button.Create(window)
             setColorBtn:SetText("Set Color")

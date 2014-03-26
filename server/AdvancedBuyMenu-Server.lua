@@ -18,25 +18,25 @@ function BuyMenu:__init()
 					}
     self.ammo_counts            = {
 --		ID			Mag		Reserve			Weapon Name
-        [2]		= {	12,		60 },		--	Pistol
-		[43]	= {	125,	1000 },		--	Bubble Blaster
-		[4]		= {	7,		35 },		--	Revolver
-        [6]		= {	3,		30 },		--	Sawed-Off Shotgun
-		[5]		= {	30,		150 },		--	Submachine Gun
-		[13]	= {	6,		30 },		--	Shotgun
-		[11]	= {	20,		100 },		--	Assault Rifle
-        [28]	= {	26,		130 },		--	Machine Gun
-        [14]	= {	4,		20 },		--	Sniper Rifle
-		[17]	= {	5,		25 },		--	Grenade Launcher
-		[16]	= {	3,		15 },		--	Rocket Launcher
-		[26]	= {	100,	100 },		--	?????
-		[66]	= {	116,	116 },		--	Panay's Rocket Launcher Modification
-		[103]	= {	6,		30 },		--	Rico's Signature Gun			DLC
-		[101]	= {	100,	1000 },		--	Air Propulsion Gun				DLC
-		[100]	= {	24,		120 },		--	Bull's Eye Assault Rifle		DLC
-		[104]	= {	8,		80 },		--	Quad Rocket Launcher			DLC
-		[102]	= {	1,		25 },		--	Cluster Bomb Launcher			DLC
-		[105]	= {	4,		40 },		--	Multi-Lock Missile Launcher		DLC
+        [2]		= {	12,		300 },		--	Pistol
+		[43]	= {	125,	500 },		--	Bubble Blaster
+		[4]		= {	7,		175 },		--	Revolver
+        [6]		= {	3,		150 },		--	Sawed-Off Shotgun
+		[5]		= {	30,		750 },		--	Submachine Gun
+		[13]	= {	6,		150 },		--	Shotgun
+		[11]	= {	20,		500 },		--	Assault Rifle
+        [28]	= {	26,		650 },		--	Machine Gun
+        [14]	= {	4,		100 },		--	Sniper Rifle
+		[17]	= {	5,		125 },		--	Grenade Launcher
+		[16]	= {	3,		75 },		--	Rocket Launcher
+		[26]	= {	100,	500 },		--	?????
+		[66]	= {	116,	580 },		--	Panay's Rocket Launcher Modification
+		[103]	= {	6,		150 },		--	Rico's Signature Gun			DLC
+		[101]	= {	100,	5000 },		--	Air Propulsion Gun				DLC
+		[100]	= {	24,		600 },		--	Bull's Eye Assault Rifle		DLC
+		[104]	= {	8,		400 },		--	Quad Rocket Launcher			DLC
+		[102]	= {	1,		125 },		--	Cluster Bomb Launcher			DLC
+		[105]	= {	4,		200 },		--	Multi-Lock Missile Launcher		DLC
     }
 
     self:CreateItems()
