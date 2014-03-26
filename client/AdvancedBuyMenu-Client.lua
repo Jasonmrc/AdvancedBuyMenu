@@ -745,7 +745,7 @@ function BuyMenu:ModulesLoad()
                 "Press B to open the buymenu. Then select an item and click Buy.\n" ..
                 "Any vehicles you buy through the buy menu will be removed when you leave the server.\n" ..
                 "Models and appearances will appear again the next time you join.\n" ..
-                "\n:: Advanced Buymenu with Templates, Decals, Hats, Saved Colors, and Saved Appearance System was made by JasonMRC, of the Problem Solvers.\n" ..
+                "\n:: Advanced Buymenu with Templates, Decals, Hats, Saved Colors, and Saved Appearance System was made by JasonMRC, of the Problem Solvers with some help from Eraknelo.\n" ..
                 "\n:: Buymenu with Categorized Tabs was made by Urik Kane.\n" ..
                 "\n:: The Original Buymenu Script was made by Philpax, a Develpoer of JC2-MP.\n"
         } )
