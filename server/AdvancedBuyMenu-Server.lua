@@ -103,10 +103,12 @@ end
 function BuyMenu:ColorChanged( args, sender )
     local veh = sender:GetVehicle()
     if IsValid(veh) then
-        if self.vehicles[sender:GetId()] ~= nil and self.vehicles[sender:GetId()]:GetId() == veh:GetId() then
-            veh:SetColors( args.tone1, args.tone2 )
-        else
-            sender:SendChatMessage("This isn't your vehicle!", Color(255,0,0))
+        if self.vehicles[sender:GetId()] ~= nil then
+			if self.vehicles[sender:GetId()]:GetId() == veh:GetId() then
+				veh:SetColors( args.tone1, args.tone2 )
+			else
+				sender:SendChatMessage("This isn't your vehicle!", Color(255,0,0))
+			end
         end
     end
 end
