@@ -140,7 +140,9 @@ function BuyMenu:CreateItems()
 			--	End fields can be left blank, but fields between fields must have atleast nil,
 			--	Otherwise you will find it displays wrong.
 --				VehicleBuyMenuEntry( 9, 0, "TemplateName", "DecalName", "CustomName", 3 ),
-				VehicleBuyMenuEntry( 9, 0, nil, nil, nil, 1 ),
+--				VehicleBuyMenuEntry( 9, 0, nil, nil, nil, 1 ),
+				--	The above is an example.
+				VehicleBuyMenuEntry( 9, 0 ),
 				-- ^ Tuk-Tuk Rickshaw
 				VehicleBuyMenuEntry( 22, 0 ),
 				-- ^ Tuk-Tuk Laa
@@ -713,7 +715,8 @@ function BuyMenu:CreateItems()
             { "Roaches", "Ular Boys", "Reapers", "Government", "Agency", "Misc" },
 
             ["Roaches"] = {
-                ModelBuyMenuEntry( 2, 0, "Razak Razman", 1 ),
+--                ModelBuyMenuEntry( 2, 0, "Razak Razman", 1 ),
+                ModelBuyMenuEntry( 2, 0, "Razak Razman" ),
                 ModelBuyMenuEntry( 5, 0, "Elite" ),
                 ModelBuyMenuEntry( 32, 0, "Technician" ),
                 ModelBuyMenuEntry( 85, 0, "Soldier 1" ),
@@ -793,7 +796,8 @@ function BuyMenu:CreateItems()
 
             ["Head - Hats"] = {
 				AppearanceBuyMenuEntry( "Clear", 0, "Head", "Clear Head" ),
-				AppearanceBuyMenuEntry( "pd_arcticvillage_female2.eez/pd_arcticvillage_female_2-hat_winter.lod", 0, "Head", "Artic Linen Hat", 1 ),
+--				AppearanceBuyMenuEntry( "pd_arcticvillage_female2.eez/pd_arcticvillage_female_2-hat_winter.lod", 0, "Head", "Artic Linen Hat", 1 ),
+				AppearanceBuyMenuEntry( "pd_arcticvillage_female2.eez/pd_arcticvillage_female_2-hat_winter.lod", 0, "Head", "Artic Linen Hat" ),
 				AppearanceBuyMenuEntry( "pd_arcticvillage_male2.eez/pd_arcticvillage_male_2-hat_winter.lod", 0, "Head", "Artic Linen Hat Big" ),
 				AppearanceBuyMenuEntry( "pd_generic_male_2.eez/pd_generic_male_2-hat_linen.lod", 0, "Head", "Linen Hat - White" ),
 				AppearanceBuyMenuEntry( "pd_generic_male_3.eez/pd_generic_male_3-hat_linen.lod", 0, "Head", "Linen Hat - Speckled" ),
