@@ -114,7 +114,7 @@ function BuyMenu:CreateAppearance(player)
 			})
 	else
 		if player_hats[player:GetId()] ~= nil then
-			if IsValid( player_hats[player:GetId()] ) then
+			if IsValid( player_hats[player:GetId()], false ) then
 				player_hats[player:GetId()]:Remove()
 			end
 			player_hats[player:GetId()] = nil
@@ -128,7 +128,7 @@ function BuyMenu:CreateAppearance(player)
 			})
 	else
 		if player_coverings[player:GetId()] ~= nil then
-			if IsValid( player_coverings[player:GetId()] ) then
+			if IsValid( player_coverings[player:GetId()], false ) then
 				player_coverings[player:GetId()]:Remove()
 			end
 			player_coverings[player:GetId()] = nil
@@ -142,7 +142,7 @@ function BuyMenu:CreateAppearance(player)
 		})
 	else
 		if player_hairs[player:GetId()] ~= nil then
-			if IsValid( player_hairs[player:GetId()] ) then
+			if IsValid( player_hairs[player:GetId()], false ) then
 				player_hairs[player:GetId()]:Remove()
 			end
 			player_hairs[player:GetId()] = nil
@@ -156,7 +156,7 @@ function BuyMenu:CreateAppearance(player)
 			})
 	else
 		if player_faces[player:GetId()] ~= nil then
-			if IsValid( player_faces[player:GetId()] ) then
+			if IsValid( player_faces[player:GetId()], false ) then
 				player_faces[player:GetId()]:Remove()
 			end
 			player_faces[player:GetId()] = nil
@@ -170,7 +170,7 @@ function BuyMenu:CreateAppearance(player)
 			})
 	else
 		if player_necks[player:GetId()] ~= nil then
-			if IsValid( player_necks[player:GetId()] ) then
+			if IsValid( player_necks[player:GetId()], false ) then
 				player_necks[player:GetId()]:Remove()
 			end
 			player_necks[player:GetId()] = nil
@@ -184,7 +184,7 @@ function BuyMenu:CreateAppearance(player)
 			})
 	else
 		if player_backs[player:GetId()] ~= nil then
-			if IsValid( player_backs[player:GetId()] ) then
+			if IsValid( player_backs[player:GetId()], false ) then
 				player_backs[player:GetId()]:Remove()
 			end
 			player_backs[player:GetId()] = nil
@@ -198,7 +198,7 @@ function BuyMenu:CreateAppearance(player)
 			})
 	else
 		if player_torso[player:GetId()] ~= nil then
-			if IsValid( player_torso[player:GetId()] ) then
+			if IsValid( player_torso[player:GetId()], false ) then
 				player_torso[player:GetId()]:Remove()
 			end
 			player_torso[player:GetId()] = nil
@@ -212,7 +212,7 @@ function BuyMenu:CreateAppearance(player)
 			})
 	else
 		if player_righthand[player:GetId()] ~= nil then
-			if IsValid( player_righthand[player:GetId()] ) then
+			if IsValid( player_righthand[player:GetId()], false ) then
 				player_righthand[player:GetId()]:Remove()
 			end
 			player_righthand[player:GetId()] = nil
@@ -226,7 +226,7 @@ function BuyMenu:CreateAppearance(player)
 		})
 	else
 		if player_lefthand[player:GetId()] ~= nil then
-			if IsValid( player_lefthand[player:GetId()] ) then
+			if IsValid( player_lefthand[player:GetId()], false ) then
 				player_lefthand[player:GetId()]:Remove()
 			end
 			player_lefthand[player:GetId()] = nil
@@ -240,7 +240,7 @@ function BuyMenu:CreateAppearance(player)
 			})
 	else
 		if player_legs[player:GetId()] ~= nil then
-			if IsValid( player_legs[player:GetId()] ) then
+			if IsValid( player_legs[player:GetId()], false ) then
 				player_legs[player:GetId()]:Remove()
 			end
 			player_legs[player:GetId()] = nil
@@ -254,7 +254,7 @@ function BuyMenu:CreateAppearance(player)
 			})
 	else
 		if player_rightfoot[player:GetId()] ~= nil then
-			if IsValid( player_rightfoot[player:GetId()] ) then
+			if IsValid( player_rightfoot[player:GetId()], false ) then
 				player_rightfoot[player:GetId()]:Remove()
 			end
 			player_rightfoot[player:GetId()] = nil
@@ -268,7 +268,7 @@ function BuyMenu:CreateAppearance(player)
 			})
 	else
 		if player_leftfoot[player:GetId()] ~= nil then
-			if IsValid( player_leftfoot[player:GetId()] ) then
+			if IsValid( player_leftfoot[player:GetId()], false ) then
 				player_leftfoot[player:GetId()]:Remove()
 			end
 			player_leftfoot[player:GetId()] = nil
@@ -278,74 +278,74 @@ end
 
 function BuyMenu:RemoveAppearance(player)
 	if player_hats[player:GetId()] ~= nil then
-		if IsValid( player_hats[player:GetId()] ) then
+		if IsValid( player_hats[player:GetId()], false ) then
 			player_hats[player:GetId()]:Remove()
 		end
 		player_hats[player:GetId()] = nil
 	end
 	if player_coverings[player:GetId()] ~= nil then
-		if IsValid( player_coverings[player:GetId()] ) then
+		if IsValid( player_coverings[player:GetId()], false ) then
 			player_coverings[player:GetId()]:Remove()
 		end
 		player_coverings[player:GetId()] = nil
 	end
 	if player_hairs[player:GetId()] ~= nil then
-		if IsValid( player_hairs[player:GetId()] ) then
+		if IsValid( player_hairs[player:GetId()], false ) then
 			player_hairs[player:GetId()]:Remove()
 		end
 		player_hairs[player:GetId()] = nil
 	end
 	if player_faces[player:GetId()] ~= nil then
-		if IsValid( player_faces[player:GetId()] ) then
+		if IsValid( player_faces[player:GetId()], false ) then
 			player_faces[player:GetId()]:Remove()
 		end
 		player_faces[player:GetId()] = nil
 	end
 	if player_necks[player:GetId()] ~= nil then
-		if IsValid( player_necks[player:GetId()] ) then
+		if IsValid( player_necks[player:GetId()], false ) then
 			player_necks[player:GetId()]:Remove()
 		end
 		player_necks[player:GetId()] = nil
 	end
 	if player_backs[player:GetId()] ~= nil then
-		if IsValid( player_backs[player:GetId()] ) then
+		if IsValid( player_backs[player:GetId()], false ) then
 			player_backs[player:GetId()]:Remove()
 		end
 		player_backs[player:GetId()] = nil
 	end
 	
 	if player_torso[player:GetId()] ~= nil then
-		if IsValid( player_torso[player:GetId()] ) then
+		if IsValid( player_torso[player:GetId()], false ) then
 			player_torso[player:GetId()]:Remove()
 		end
 		player_torso[player:GetId()] = nil
 	end
 	if player_righthand[player:GetId()] ~= nil then
-		if IsValid( player_righthand[player:GetId()] ) then
+		if IsValid( player_righthand[player:GetId()], false ) then
 			player_righthand[player:GetId()]:Remove()
 		end
 		player_righthand[player:GetId()] = nil
 	end
 	if player_lefthand[player:GetId()] ~= nil then
-		if IsValid( player_lefthand[player:GetId()] ) then
+		if IsValid( player_lefthand[player:GetId()], false ) then
 			player_lefthand[player:GetId()]:Remove()
 		end
 		player_lefthand[player:GetId()] = nil
 	end
 	if player_legs[player:GetId()] ~= nil then
-		if IsValid( player_legs[player:GetId()] ) then
+		if IsValid( player_legs[player:GetId()], false ) then
 			player_legs[player:GetId()]:Remove()
 		end
 		player_legs[player:GetId()] = nil
 	end
 	if player_rightfoot[player:GetId()] ~= nil then
-		if IsValid( player_rightfoot[player:GetId()] ) then
+		if IsValid( player_rightfoot[player:GetId()], false ) then
 			player_rightfoot[player:GetId()]:Remove()
 		end
 		player_rightfoot[player:GetId()] = nil
 	end
 	if player_leftfoot[player:GetId()] ~= nil then
-		if IsValid( player_leftfoot[player:GetId()] ) then
+		if IsValid( player_leftfoot[player:GetId()], false ) then
 			player_leftfoot[player:GetId()]:Remove()
 		end
 		player_leftfoot[player:GetId()] = nil
@@ -469,62 +469,62 @@ end
 
 function BuyMenu:ModuleUnloadAppearance()
 	for k, v in pairs(player_hats) do
-		if IsValid(v) then
+		if IsValid(v, false) then
 			v:Remove()
 		end
 	end
 	for k, v in pairs(player_coverings) do
-		if IsValid(v) then
+		if IsValid(v, false) then
 			v:Remove()
 		end
 	end
 	for k, v in pairs(player_hairs) do
-		if IsValid(v) then
+		if IsValid(v, false) then
 			v:Remove()
 		end
 	end
 	for k, v in pairs(player_faces) do
-		if IsValid(v) then
+		if IsValid(v, false) then
 			v:Remove()
 		end
 	end
 	for k, v in pairs(player_necks) do
-		if IsValid(v) then
+		if IsValid(v, false) then
 			v:Remove()
 		end
 	end
 	for k, v in pairs(player_backs) do
-		if IsValid(v) then
+		if IsValid(v, false) then
 			v:Remove()
 		end
 	end
 	for k, v in pairs(player_torso) do
-		if IsValid(v) then
+		if IsValid(v, false) then
 			v:Remove()
 		end
 	end
 	for k, v in pairs(player_righthand) do
-		if IsValid(v) then
+		if IsValid(v, false) then
 			v:Remove()
 		end
 	end
 	for k, v in pairs(player_lefthand) do
-		if IsValid(v) then
+		if IsValid(v, false) then
 			v:Remove()
 		end
 	end
 	for k, v in pairs(player_legs) do
-		if IsValid(v) then
+		if IsValid(v, false) then
 			v:Remove()
 		end
 	end
 	for k, v in pairs(player_rightfoot) do
-		if IsValid(v) then
+		if IsValid(v, false) then
 			v:Remove()
 		end
 	end
 	for k, v in pairs(player_leftfoot) do
-		if IsValid(v) then
+		if IsValid(v, false) then
 			v:Remove()
 		end
 	end
@@ -747,7 +747,7 @@ function BuyMenu:ModulesLoad()
                 "Models and appearances will appear again the next time you join.\n" ..
                 "\n:: Advanced Buymenu with Templates, Decals, Hats, Saved Colors, and Saved Appearance System was made by JasonMRC, of the Problem Solvers with some help from Eraknelo.\n" ..
                 "\n:: Buymenu with Categorized Tabs was made by Urik Kane.\n" ..
-                "\n:: The Original Buymenu Script was made by Philpax, a Develpoer of JC2-MP.\n"
+                "\n:: The Original Buymenu Script was made by Philpax, a Developer of JC2-MP.\n"
         } )
 end
 
